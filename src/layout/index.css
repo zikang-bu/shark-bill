@@ -1,0 +1,17 @@
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #929090;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-current {
+    color: rgb(23, 203, 226);
+}

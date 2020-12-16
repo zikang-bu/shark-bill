@@ -1,0 +1,36 @@
+.detail-top {
+    background-color: rgb(23, 203, 226);
+    padding         : 0 4%;
+
+    .title {
+        font-size : 16px;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+
+        .date {
+            flex: 1;
+        }
+
+        .bill-item {
+            flex: 2;
+        }
+    }
+
+    .apps {
+        background-color: white;
+        display         : flex;
+        justify-content : space-around;
+        text-align      : center;
+        border-radius   : 8px;
+    }
+}
+
+.detail-items {
+    .detail-item {
+        display        : flex;
+        justify-content: space-between;
+    }
+}
