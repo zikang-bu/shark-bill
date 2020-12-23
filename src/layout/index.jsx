@@ -27,8 +27,9 @@ class MyLayout extends Component {
 
 	componentDidMount() {
 		const pathname = this.props.history.location.pathname;
+		const nav = navs.find((nav) => nav.path === pathname);
 		this.setState({
-			current: pathname.substring(1, pathname.length),
+			current: nav.key,
 		});
 	}
 

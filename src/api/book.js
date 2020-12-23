@@ -14,16 +14,17 @@ export const getBookItems = (date) => {
 }
 
 // 更新记账实例
-export const updateBookItem = (id, item) => {
+export const updateBookItem = (id, date, category, type, amount, remarks) => {
   return ajax.put(BOOK_ITEM, {
-    id,
-    item
+    id, date, category, type, amount, remarks
   })
 }
 
 // 设置记账实例
-export const setBookItem = data => {
-  return ajax.post(BOOK_ITEM, data)
+export const setBookItem = (date, category, type, amount, remarks) => {
+  return ajax.post(BOOK_ITEM, {
+    date, category, type, amount, remarks
+  })
 }
 
 // 删除记账实例

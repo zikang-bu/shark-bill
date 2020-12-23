@@ -15,6 +15,10 @@ const routes = [
     component: Layout
   },
   {
+    path: "/main",
+    component: Layout
+  },
+  {
     path: "/budget",
     component: Budget
   },

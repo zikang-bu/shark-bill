@@ -13,7 +13,7 @@ class Detail extends Component {
 		return details.map((d, index) => {
 			return (
 				<Fragment key={index}>
-					<div className="detail-item">
+					<div className="detail-item detail-date">
 						<div>
 							{d.date} {d.week}
 						</div>
