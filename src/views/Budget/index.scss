@@ -1,0 +1,15 @@
+.budget {
+    height: 100vh;
+
+    &_header {
+        background-color: rgb(23, 203, 226);
+        text-align      : center;
+        position        : relative;
+
+        .cancel {
+            position: absolute;
+            right   : 0;
+            top     : 0;
+        }
+    }
+}
