@@ -12,4 +12,86 @@
             top     : 0;
         }
     }
+
+    &_box {
+        padding: 5px;
+
+        .box-header {
+            display        : flex;
+            justify-content: space-between;
+        }
+
+        .box-detail {
+            display: flex;
+
+            .chart {
+                width     : 100px;
+                text-align: center;
+
+                .ant-progress-inner {
+                    width    : 80px !important;
+                    height   : 80px !important;
+                    font-size: 14px !important;
+                }
+            }
+
+            .text {
+                width: calc(100% - 100px);
+
+                div {
+                    display        : flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    &_division {
+        height          : 10px;
+        background-color: #ececec;
+    }
+
+    &_category {
+        padding: 0 5px 5px;
+
+        .item-box {
+            padding-top  : 5px;
+            border-bottom: #ececec 1px solid;
+        }
+
+        .item-header {
+            display        : flex;
+            justify-content: space-between;
+        }
+
+        .item-detail {
+            display: flex;
+
+            .chart {
+                width     : 100px;
+                text-align: center;
+
+                .ant-progress-inner {
+                    width    : 80px !important;
+                    height   : 80px !important;
+                    font-size: 14px !important;
+                }
+            }
+
+            .text {
+                width: calc(100% - 100px);
+
+                div {
+                    display        : flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .budget-last {
+        border-bottom: #ececec 1px solid;
+        font-weight  : bold;
+        font-size    : 15px;
+    }
 }

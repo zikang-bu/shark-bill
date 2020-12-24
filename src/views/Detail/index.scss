@@ -32,9 +32,27 @@
     .detail-item {
         display        : flex;
         justify-content: space-between;
+        align-items    : center;
+        padding        : 5px;
     }
 
     .detail-date {
         border-bottom: 1px solid #cecece;
+    }
+
+    .category_icon {
+        border-radius   : 50%;
+        background-color: #66616110;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        width           : 28px;
+        height          : 28px;
+        float           : left;
+        margin-right    : 5px;
+
+        .SvgIcon {
+            color: rgb(23, 203, 226);
+        }
     }
 }

@@ -4,7 +4,7 @@ import { ContainerOutlined, WalletOutlined, DollarCircleOutlined } from '@ant-de
 import { getBookItems } from '@api';
 import { dateFormat, nowYear, nowMonth } from '@/utils/date';
 import { withRouter } from 'react-router-dom';
-
+import IconFont from '../../components/SvgIcon';
 class Detail extends Component {
 	state = { details: [], expend: 0, income: 0 };
 
@@ -25,7 +25,12 @@ class Detail extends Component {
 					<div>
 						{d.items.map((i, index) => (
 							<div className="detail-item" key={index}>
-								<span>{i.remarks ? i.remarks : i.category}</span>
+								<span>
+									<div className="category_icon">
+										<IconFont type={i.icon} />
+									</div>
+									{i.remarks ? i.remarks : i.category}
+								</span>
 								<span>{i.amount}</span>
 							</div>
 						))}
