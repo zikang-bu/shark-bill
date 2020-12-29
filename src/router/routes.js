@@ -5,6 +5,8 @@ import Detail from "../views/Detail";
 import Mine from "../views/Mine"
 import Budget from "../views/Budget";
 import Bill from "../views/Bill";
+import Login from "../views/Login";
+import Register from '../views/Register'
 import NotFound from "../views/NotFound";
 
 /* 第一层路由 */
@@ -25,6 +27,14 @@ const routes = [
   {
     path: "/bill",
     component: Bill
+  },
+  {
+    path: "/login",
+    component: Login
+  },
+  {
+    path: "/register/:step",
+    component: Register
   },
   {
     path: "/not-found",
